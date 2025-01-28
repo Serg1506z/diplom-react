@@ -1,0 +1,33 @@
+.headerContainer{
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.logo{
+    font-size: 36px;
+    padding-left: 258px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: 700;
+}
+
+.headerNav {
+    background-color: rgba(41, 41, 41, 1);
+    font-size: 30px;
+    padding-left: 258px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+     gap: 83px;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}

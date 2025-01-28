@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    gap:33px;
+}
+
+.block {
+    width: 72px;
+    height: 19px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.block_active{
+    background-color: rgba(252, 220, 157, 1);
+}
+
+
+
+.toggle {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 50%;
+    top: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.toggle_active {
+    left: calc(100% - 28px);
+   background-color: rgba(255, 168, 0, 1);
+}
+
+.checkBox {
+    display: none;
+}

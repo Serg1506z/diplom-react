@@ -1,0 +1,185 @@
+.footer {
+    width: 100%;
+    background-color: rgba(45, 43, 47, 1);
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    position: relative;
+}
+
+.contact {
+    font-size: 30px;
+}
+
+
+.leftColumn {
+    margin-left: 343px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 340px;
+}
+
+.contactItems {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.contactItem {
+    color: white;
+    display: flex;
+}
+
+.contactIcon_phone {
+    width: 30px;
+    height: 30px;
+    background-image: url(../../Assets/Images/item-phone.svg);
+    margin-right: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contactIcon_mail {
+    width: 30px;
+    height: 30px;
+    background-image: url(../../Assets/Images/item-mail.svg);
+    margin-right: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contactIcon_skype {
+    width: 30px;
+    height: 30px;
+    background-image: url(../../Assets/Images/item-skype.svg);
+    margin-right: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contactIcon_coordinates {
+    width: 30px;
+    height: 30px;
+    background-image: url(../../Assets/Images/item-coordinates.svg);
+    margin-right: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inputTitle {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.inputSub {
+    width: 447px;
+    height: 60px;
+    font-size: 24px;
+    color: rgba(229, 229, 229, 1);
+    padding-left: 21px;
+}
+
+.btnSub {
+    font-size: 24px;
+    width: 170px;
+    height: 60px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.iconTitle {
+    font-size: 30px;
+    margin-top: 44px;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 45px;
+    margin-top: 20px;
+}
+
+.iconYoutube {
+    width: 38px;
+    height: 30px;
+    background-image: url(../../Assets/Images/icon-youtube.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iconIn {
+    width: 31px;
+    height: 30px;
+    background-image: url(../../Assets/Images/icon-in.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iconGoogle {
+    width: 47px;
+    height: 30px;
+    background-image: url(../../Assets/Images/icon-google.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iconFacebook {
+    width: 14px;
+    height: 30px;
+    background-image: url(../../Assets/Images/icon-facebook.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iconTwitter {
+    width: 37px;
+    height: 30px;
+    background-image: url(../../Assets/Images/icon-twitter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sub {
+    width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 258px;
+    margin-top: 100px;
+    margin-bottom: 34px;
+}
+
+
+.logoSub {
+    font-size: 36px;
+}
+
+.iconSub {
+    width: 36px;
+    height: 36px;
+    background-image: url(../../Assets/Images/footer-arow.svg);
+}
+
+.dateSub {
+    font-size: 24px;
+}
+
+.footerLine {
+    position: absolute;
+    width: 1920px;
+    border: 1px solid white;
+    bottom: 107px;
+}
+
+.headerLine {
+    position: absolute;
+    width: 1898px;
+    background-color: rgba(255, 168, 0, 1);
+    bottom: -9px;
+    height: 8px;
+}

@@ -1,0 +1,71 @@
+
+
+.headerSection_input {
+    display: flex;
+    width: 729px;
+    height: 574px;
+    flex-wrap: wrap;
+    background-color: rgba(41, 41, 41, 0.8);
+  
+}
+
+
+.headerSection_input input{
+    padding-left: 21px;
+    padding-right: 13px;
+}
+
+.headerSection_title{
+    font-size: 30px;
+    color: white;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.headerSection_input{
+   padding-left: 25px;
+   padding-top: 79px;
+   padding-right: 25px;
+}
+
+/* .header-section_input:last-child{
+    justify-content: end;
+} */
+
+.inputDate{
+    display: flex;
+    gap: 32px;
+    width: 682px;
+}
+.selectDate{
+    width: 325px;
+    height: 60px;
+}
+
+
+.inputWay{
+    margin-bottom: 60px;
+}
+.changeInput{
+    width: 24px;
+    height: 24px;
+    background-image: url(../../Assets/Images/change-input.svg);
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+}
+
+
+.selectDate_dateBtn {
+    font-size: 24px;
+    padding: 17px 68px;
+    color: black;
+    background-color: rgba(255, 168, 0, 1);
+    border-radius: 5px;
+    border: none;
+    margin-top: 90px;
+    margin-left: 360px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    width: 323px;
+}
