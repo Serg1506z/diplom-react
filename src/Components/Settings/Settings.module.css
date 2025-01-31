@@ -1,0 +1,157 @@
+.setting {
+    width: 360px;
+
+}
+
+.settingDate {
+    background-color: rgba(62, 60, 65, 1);
+    color: white;
+    padding: 43px 36px 11px 37px;
+}
+
+.dateInput {
+    width: 295px;
+    height: 43px;
+    margin-bottom: 25px;
+}
+
+
+.asideLine {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.settingOption {
+    background-color: rgba(62, 60, 65, 1);
+    color: white;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+.optionItems {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-bottom: 23px;
+    font-size: 18px;
+    background-color: rgba(62, 60, 65, 1);
+}
+
+.optionItem{
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    width: 260px;
+}
+
+.itemText{
+    margin-left: 34px;
+    margin-right: auto;
+}
+
+.itemIcon1 {
+    background-image: url(../../Assets/Images/option-item\(купе\).svg);
+    width: 24px;
+    height: 24px ;
+     background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemIcon2 {
+    background-image: url(../../Assets/Images/option-item\(плац\).svg);
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemIcon3 {
+    background-image: url(../../Assets/Images/option-item\(сидячий\).svg);
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemIcon4 {
+    background-image: url(../../Assets/Images/option-item\(люкс\).svg);
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemIcon5 {
+    background-image: url(../../Assets/Images/option-item\(wi-fi\).svg);
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.itemIcon6 {
+    background-image: url(../../Assets/Images/option-item\(expres\).png);
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.settingPrice {
+    background-color: rgba(62, 60, 65, 1);
+    color: white;
+    font-size: 30px;
+    padding-left: 32px;
+    padding-top: 37px;
+    padding-bottom: 63px;
+}
+
+.inputPrice {
+    width: 294px;
+    height: 19px;
+
+}
+
+.settingSaid {
+    background-color: rgba(62, 60, 65, 1);
+    color: white;
+    font-size: 30px;
+    display: flex;
+    padding-left: 33px;
+    padding-top: 33px;
+    padding-bottom: 38px;
+
+}
+
+.saidTitle {
+    margin-left: 12px;
+}
+
+.settingBtn {
+    width: 32px;
+    height: 26px;
+    
+    border-radius: 5px;
+    border: none;
+}
+
+.settingBtn_add {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../Assets/Images/setting-btn__add.svg);
+    background-color: transparent;
+    border: none;
+    margin-right: 37px;
+    margin-left: auto;
+}
+
+.settingBtn_forward{
+    background-image: url(../../Assets/Images/settingBtn_forward.svg);
+    background-color: transparent;
+}
+
+.settingBtn_reverce{
+    background-image: url(../../Assets/Images/settingBtn_reverce.svg);
+    background-color: transparent;
+}

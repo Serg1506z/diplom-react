@@ -29,7 +29,7 @@ export default function TrainCard() {
             <div class={style.categoriPlaces}>
                 <div class={style.categoriPlace}>
                     <p class={style.placeTitle}>Сидячий</p>
-                    <div class={style.Quantity}>88</div>
+                    <div class={style.quantity}>88</div>
                     <div class={style.placePraice}><span class={style.textPraice}>от</span>1 920</div>
                 </div>
                 <div class={style.categoriPlace}>

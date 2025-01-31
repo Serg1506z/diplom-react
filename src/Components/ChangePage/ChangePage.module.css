@@ -1,0 +1,52 @@
+
+
+
+.changePage {
+    width: 564px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 142px;
+    margin-bottom: 193px;
+    margin-right: 256px;
+    margin-left: auto;
+}
+
+.pageBtn {
+    width: 85px;
+    height: 75px;
+    border: 2px solid rgba(196, 196, 196, 1);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.btnBack {
+    background-image: url(../../Assets/Images/btn-back.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page1 {
+    background-image: url(../../Assets/Images/page1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page2 {
+    background-image: url(../../Assets/Images/page2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page3 {
+    background-image: url(../../Assets/Images/page3.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btnForward {
+    background-image: url(../../Assets/Images/btn-forward.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}

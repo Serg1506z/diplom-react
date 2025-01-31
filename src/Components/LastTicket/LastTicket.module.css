@@ -1,0 +1,70 @@
+.tickets {
+    width: 360px;
+    border: 1px solid rgba(196, 196, 196, 1);
+    padding-left: 18px;
+    padding-top: 18px;
+    padding-right: 20px;
+    margin-top: 26px;
+}
+
+
+
+.cities {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.trainStations {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: rgba(146, 143, 148, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.trainStation_right {
+    width: 83px;
+    text-align: right;
+}
+
+
+.trainStation_left {
+    width: 83px;
+    text-align: left;
+}
+
+.praiceText {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: rgba(146, 143, 148, 1);
+}
+
+.ticketFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 30px;
+}
+
+.ticketIcons {
+    width: 92px;
+    height: 20px;
+    background-image: url(../../Assets/Images/ticket-icon.svg);
+}
+
+.ticketPraice {
+    color: rgba(255, 168, 0, 1);
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+}

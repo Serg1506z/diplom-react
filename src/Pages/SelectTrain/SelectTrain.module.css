@@ -4,3 +4,29 @@
 .mainContainer{
     width: 100%;
 }
+
+.selectTicket{
+    width: 100%;
+    display: flex;
+    padding-left: 258px;
+    padding-top: 95px;
+    padding-right: 256px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.leftSection{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.ticketsTitle {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 35.16px;
+    text-align: left;
+    margin-top: 94px;
+}

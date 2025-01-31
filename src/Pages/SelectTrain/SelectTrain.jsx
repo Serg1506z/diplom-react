@@ -5,16 +5,26 @@ import CheckBoxToggle from "../../Components/CheckBox/CheckBoxToggle"
 import SectionFindTicket from "../../Components/SectionFindeTicket/SectionFindTicket"
 import ProgressBar from "../../Components/ProgressBar/ProgressBar"
 import TrainCard from "../../Components/TrainCards/TrainCard"
+import Settings from "../../Components/Settings/Settings"
+import ChangePage from "../../Components/ChangePage/ChangePage"
+import LastTicket from "../../Components/LastTicket/LastTicket"
 
 export default function SelectTrain() {
-    return <div className={style.SelectTrain}>
-        <Header />
-      <main className={style.mainContainer}>
-      <SectionFindTicket/>
+  return <div className={style.SelectTrain}>
+    <Header />
+    <main className={style.mainContainer}>
+      <SectionFindTicket />
       <ProgressBar />
-      <TrainCard />
-      </main>
-        <Footer />
-        <CheckBoxToggle text={"купе"} />
-    </div>
+      <section className={style.selectTicket}>
+        <Settings />
+        <TrainCard />
+       <section className={style.lastTicket}>
+       <h2 class={style.ticketsTitle}>последние билеты</h2>
+       <LastTicket />
+       </section>
+      </section>
+        <ChangePage />
+    </main>
+    <Footer />
+  </div>
 }
