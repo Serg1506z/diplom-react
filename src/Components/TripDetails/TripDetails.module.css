@@ -1,0 +1,311 @@
+.details {
+    width: 360px;
+    background-color: rgba(62, 60, 65, 1);
+
+}
+
+.detailsTitle {
+    padding: 35px 44px 30px 44px;
+    border-bottom: 1px solid white;
+}
+
+
+.forward {
+    margin-top: 20px;
+}
+
+.back{
+    margin-top: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: end;
+
+}
+
+.titleText{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.forwardTitleBtn {
+    width: 32px;
+    height: 32px;
+    background-image: url(../../Assets/Images/settingBtn_forward.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.backTitleBtn{
+    width: 32px;
+    height: 32px;
+    background-image: url(../../Assets/Images/settingBtn_reverce.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.aboutTraintitleText {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 12px;
+    margin-right: 20px;
+}
+
+.titleTime {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.titleBtnRemove {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../Assets/Images/forwardTitleBtnRemove.svg);
+    background-color: transparent;
+    background-position: center;
+    border: none;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.aboutTrain {
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-left: 27px;
+    padding-right: 28px;
+}
+
+.numberTrain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.leftNumberText {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.rightNumberText {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.wayTrain {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.wayRight {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.leftWayText {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.rightWayText {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    width: 134px;
+}
+
+
+.departureTime {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftDepartureTime{
+    margin-top: 70px;
+}
+
+.middledepartureTime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.middleTime {
+    color: rgba(229, 229, 229, 1);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.middleIcon {
+    width: 30px;
+    height: 20px;
+ 
+}
+
+.middleIconForward{
+    background-image: url(../../Assets/Images/middleIcon.svg);
+}
+
+.middleIconBack{
+    background-image: url(../../Assets/Images/middleIconBack.svg);
+}
+
+.rightDepertureTime {
+    text-align: end;
+    margin-top: 70px;
+}
+
+.time {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.date {
+    color: rgba(146, 143, 148, 1);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.railways {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+
+.city {
+    color: white;
+    font-size: 18px;
+}
+
+.railway {
+    color: rgba(146, 143, 148, 1);
+
+    font-size: 18px;
+
+}
+
+.left {
+    width: 100px;
+}
+
+.right {
+    text-align: end;
+    width: 140px;
+}
+
+
+.passengersTitle{
+    display: flex;
+    text-align: end;
+    justify-content: space-between;
+}
+
+.passengers{
+    padding: 14px 28px 46px;
+    border-bottom: 1px solid white;
+}
+
+.passengersIcon{
+    background-image: url(../../Assets/Images/passengersIcon.svg);
+    width: 26px;
+    height: 26px;
+}
+
+.passengersText{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+   
+}
+
+.passengersBtnRemove{
+    background-image: url(../../Assets/Images/forwardTitleBtnRemove.svg);
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.passengerPrice{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+    align-items: start;
+}
+
+.text{
+    color: rgba(229, 229, 229, 1);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.priceSection{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.prece{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.priceIcon{
+    background-image: url(../../Assets/Images/currency.svg);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.total{
+    display: flex;
+    padding: 30px 28px 33px;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.totalText{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.totalPrice{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.totalPriceText{
+    color: rgba(255, 168, 0, 1);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.totalPriceIcon{
+    width: 32px;
+    height: 32px;
+    background-image: url(../../Assets/Images/totalcurrency.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}

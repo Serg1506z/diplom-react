@@ -1,4 +1,5 @@
 import CheckBoxToggle from "../CheckBox/CheckBoxToggle"
+import Rangeprice from "../RangePrice/RangePrice"
 import style from "./Settings.module.css"
 
 export default function Settings() {
@@ -48,7 +49,7 @@ export default function Settings() {
         <div class={style.asideLine}></div>
         <div class={style.settingPrice}>
             <h2 class={style.priceTitle}>Стоимость </h2>
-            <input type="range" class={style.inputPrice} min="1920" max="7000" />
+            <Rangeprice/>
         </div>
         <div class={style.asideLine}></div>
         <div class={style.settingSaid}>

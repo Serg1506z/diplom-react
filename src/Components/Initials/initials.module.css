@@ -1,0 +1,22 @@
+.initials {
+    display: flex;
+    gap: 25px;
+    border-radius: 5px;
+    padding-left: 35px;
+ 
+}
+
+.formFieldInput {
+    width: 280px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    border: 1px solid rgba(146, 143, 148, 1)
+}
+
+.formFieldLabel {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(148, 145, 143);
+}

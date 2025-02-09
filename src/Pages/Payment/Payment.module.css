@@ -1,0 +1,130 @@
+.paymentContainer{
+    width: 1920px;
+}
+
+.middleSection{
+    width: 100%;
+    display: flex;
+    padding-top: 95px;
+    padding-left: 258px;
+    padding-bottom: 150px;
+}
+.rightSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.personalData{
+    width: 958px;
+    border: 1px solid  rgba(196, 196, 196, 1);
+    margin-left: 85px;
+}
+
+.personalDataTitle{
+    background-color: rgba(249, 249, 249, 1);
+    padding: 35px;
+    border-bottom:  1px solid rgba(146, 143, 148, 1);
+    margin-bottom: 30px;
+}
+
+
+.titleText{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.phone{
+    margin-top: 54px;
+    margin-left: 35px;
+}
+
+.eMail{
+    margin-top: 38px;
+    margin-left: 35px;
+    margin-bottom: 90px;
+}
+
+.phoneTitle{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+
+
+.PhoneInput{
+    width: 360px;
+    height: 50px;
+    color:  rgba(146, 143, 148, 1);
+    font-size: 24px;
+    font-weight: 400;
+    border: 1px solid rgba(146, 143, 148, 1);
+    padding-left: 20px;
+}
+
+
+.titleText{
+    
+    background-color: rgba(249, 249, 249, 1);
+    padding: 35px;
+    border-bottom:  1px solid rgba(146, 143, 148, 1);
+    border-top:  1px solid rgba(146, 143, 148, 1);
+}
+
+.paymentTypeCheckBox{
+    border-bottom: 1px solid rgba(146, 143, 148, 1);
+    padding: 50px 0 0 35px;
+}
+
+.cash{
+    padding: 58px 0 82px 35px;
+}
+
+.checkBoxBlock{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ 
+}
+
+.checkBoxInput{
+    width: 28px;
+    height: 28px;
+}
+
+.checkBoxText{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(146, 143, 148, 1);
+
+}
+
+.paymentMethod{
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    margin-left: 35px;
+    margin-top: 28px;
+    margin-bottom: 64px;
+}
+
+.paymentMethodText{
+    display: block;
+   font-size: 24px;
+    font-weight: 700;
+    width: 189px;
+}
+
+.personalDataBtn{
+    width: 323px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color:rgba(255, 168, 0, 1);
+    padding: 17px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+}

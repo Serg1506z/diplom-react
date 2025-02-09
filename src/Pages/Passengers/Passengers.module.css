@@ -1,0 +1,64 @@
+.Passengers{
+    width: 1920px;
+}
+
+.mainContainer{
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.middleSection{
+    width: 100%;
+    display: flex;
+    padding: 95px;
+}
+
+.leftSection{
+    margin-left: 260px;
+}
+
+.rightSection{
+    padding-left: 84px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addPassenger{
+    width: 960px;
+    display: flex;
+    border: 1px solid rgba(196, 196, 196, 1);
+    padding: 26px 40px 32px 26px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.addPassengerText{
+    font-size: 30px;
+    font-weight: 400;
+    color: rgba(41, 41, 41, 1);
+}
+
+.addPassengerbtn{
+    width: 13px;
+    height: 13px;
+    background-image: url(../../Assets/Images/addPassengerbtn.svg);
+    border: none;
+    background-position: center;
+    background-color: transparent;
+}
+
+.rightSectionBtn{
+    width: 222px;
+    background-color: rgba(146, 143, 148, 1);
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right:0;
+    margin-top: auto;
+    margin-bottom: 0;
+}

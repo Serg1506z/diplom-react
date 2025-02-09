@@ -1,0 +1,41 @@
+.rangepriceContainer{
+    width: 294px;
+    height: 19px;
+    background-color:transparent;
+    border: 1px solid rgba(196, 196, 196, 1);
+    border-radius: 16px;
+    position: relative;
+}
+
+
+
+.rangePrice{
+    position: absolute;
+    min-width: 48px;
+    display: flex;
+    height: 100%;
+    background-color: rgba(255, 168, 0, 1);
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+}
+
+.toggle{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.toggler1{
+    left: 0;
+}
+.toggler2{
+    right: 0;
+}
+

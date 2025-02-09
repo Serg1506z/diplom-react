@@ -9,9 +9,9 @@ export default function Footer() {
                 <a className={style.contactItem} href="#"><div className={style.contactIcon_phone}></div>8 (800) 000 00 00</a>
                 <a className={style.contactItem} href="#"><div className={style.contactIcon_mail}></div>inbox@mail.ru</a>
                 <a className={style.contactItem} href="#"><div className={style.contactIcon_skype}></div>tu.train.tickets</a>
-                <a className={style.contactItem} href="#"><div className={style.contactIcon_coordinates}></div>г. Москва
-                    ул. Московская 27-35
-                    555 555</a>
+                <a className={style.contactItem} href="#"><div className={style.contactIcon_coordinates}></div><span className={style.coordinatesWith}>г. Москва ул. Московская 27-35
+                555 555</span>
+                   </a>
             </div>
         </div>
         <div className={style.rightColumn}>
