@@ -1,5 +1,5 @@
 .SelectTrain{
-    width: 1920px;
+    max-width: 1920px;
 }
 .mainContainer{
     width: 100%;

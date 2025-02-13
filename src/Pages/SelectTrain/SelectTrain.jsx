@@ -14,16 +14,16 @@ export default function SelectTrain() {
     <Header />
     <main className={style.mainContainer}>
       <SectionFindTicket />
-      <ProgressBar />
-      <section className={style.selectTicket}>
+      {/* <ProgressBar /> */}
+      {/* <section className={style.selectTicket}>
         <Settings />
         <TrainCard />
        <section className={style.lastTicket}>
        <h2 class={style.ticketsTitle}>последние билеты</h2>
        <LastTicket />
        </section>
-      </section>
-        <ChangePage />
+      </section> */}
+        {/* <ChangePage /> */}
     </main>
     <Footer />
   </div>

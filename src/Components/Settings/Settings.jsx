@@ -1,5 +1,6 @@
 import CheckBoxToggle from "../CheckBox/CheckBoxToggle"
 import Rangeprice from "../RangePrice/RangePrice"
+import { DoubleScrollBar } from "../RangePrice/DoubleScrollBar"
 import style from "./Settings.module.css"
 
 export default function Settings() {
@@ -50,6 +51,7 @@ export default function Settings() {
         <div class={style.settingPrice}>
             <h2 class={style.priceTitle}>Стоимость </h2>
             <Rangeprice/>
+          
         </div>
         <div class={style.asideLine}></div>
         <div class={style.settingSaid}>

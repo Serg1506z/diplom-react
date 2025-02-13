@@ -1,5 +1,5 @@
 .headerContainer{
-    width: 1920px;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -25,6 +25,7 @@
     padding-bottom: 26px;
     display: flex;
      gap: 83px;
+     /* justify-content: center; */
 }
 
 .link{
