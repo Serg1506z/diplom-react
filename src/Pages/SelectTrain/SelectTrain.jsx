@@ -14,7 +14,7 @@ export default function SelectTrain() {
     <Header />
     <main className={style.mainContainer}>
       <SectionFindTicket />
-      {/* <ProgressBar /> */}
+      <ProgressBar />
       {/* <section className={style.selectTicket}>
         <Settings />
         <TrainCard />

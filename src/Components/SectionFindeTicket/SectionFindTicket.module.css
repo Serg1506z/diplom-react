@@ -1,5 +1,7 @@
 .SectionFindeTicket{
     width: 100%;
+
+   
 }
 .sectionContainer {
     width: 100%;
@@ -16,10 +18,11 @@
 
 .sectionSelect {
     max-width: 1490px;
+    width: 100%;
     height: 350px;
     background-color: rgba(41, 41, 41, 0.8);
     margin: 269px auto 0;
-    padding-top: 28px;
+    padding: 28px 20px 0;
 }
 
 
@@ -28,7 +31,7 @@
     font-weight: 100;
     color: white;
     height: 40px;
-    margin-left: 23px;
+    /* margin-left: 23px; */
     max-width: 1442px;
     display: flex;
     justify-content: space-between;
@@ -38,24 +41,53 @@
 
 .sectionInput {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 0 35px;
-    justify-content: end;
+    /* justify-content: end; */
     margin-right: 42px;
+    align-items: center;
+    /* align-items: end; */
+    width: 100%;
+
+}
+
+.inputs{
+    display: flex;
+    gap: 0 35px;
+    align-items: end;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.input__container{
+    max-width: 325px;
+    min-width: 280px;
 }
 
 .selectDate {
-    width: 325px;
-    height: 60px;
+    width: 100%;
+    /* max-width: 325px; */
+    /* height: 60px; */
+    font-size: 18px;
+    padding: 18px 10px 18px 10px;
+}
+
+.btn__container{
+    display: flex;
+    justify-content: end;
+    width: 100%;
 }
 
 .dateBtn {
+    max-width: 325px;
+    min-width: 280px;
     font-size: 24px;
-    padding: 17px 68px;
+    padding: 17px;
     color: black;
     background-color: rgba(255, 168, 0, 1);
     border-radius: 5px;
     border: none;
     margin-top: 47px;
 }
+
 

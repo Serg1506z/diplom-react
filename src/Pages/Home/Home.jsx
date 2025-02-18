@@ -56,17 +56,22 @@ export default function Home() {
          <section className={style.mainReviews}>
                 <h3 className={style.reviews}>ОТЗЫВЫ</h3>
                 <div className={style.userFeedback}>
-                    <div className={style.userPhoto1}></div>
-                      <p className={style.userDesc}><span className={style.userName}>Екатерина Вальнова</span> 
-                           <i> Доброжелательные подсказки 
-                            на всех этапах помогут правильно заполнить поля и без затруднений
-                            купить авиа или ж/д  билет, даже если вы заказываете онлайн билет  впервые.</i></p>
-                    <div className={style.userPhoto2}></div>
-                       <p className={style.userDesc}><span className={style.userName}>Евгений Стрыкало</span>
-                           <i> СМС-сопровождение до посадки 
-                            Сразу после оплаты ж/д билетов 
-                            и за 3 часа до отправления мы пришлем вам СМС-напоминание о поездке.</i></p>
-                </div>
+                    <div className={style.user__container}>
+                        <div className={style.userPhoto1}></div>
+                        <p className={style.userDesc}><span className={style.userName}>Екатерина Вальнова</span> 
+                            <i> Доброжелательные подсказки 
+                                на всех этапах помогут правильно заполнить поля и без затруднений
+                                купить авиа или ж/д  билет, даже если вы заказываете онлайн билет  впервые.</i>
+                        </p>
+                    </div>
+                    <div className={style.user__container}>
+                        <div className={style.userPhoto2}></div>
+                        <p className={style.userDesc}><span className={style.userName}>Евгений Стрыкало</span>
+                            <i> СМС-сопровождение до посадки 
+                                Сразу после оплаты ж/д билетов 
+                                и за 3 часа до отправления мы пришлем вам СМС-напоминание о поездке.</i></p>
+                        </div>
+                    </div>
                 <div className={style.scrolling}></div>
             </section>
         </main>

@@ -1,8 +1,10 @@
 .SelectTrain{
     max-width: 1920px;
+    margin: auto;
 }
 .mainContainer{
     width: 100%;
+   
 }
 
 .selectTicket{
