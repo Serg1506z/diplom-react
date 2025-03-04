@@ -75,6 +75,6 @@ export default function Home() {
                 <div className={style.scrolling}></div>
             </section>
         </main>
-        <Footer/>
+       <Footer/>
     </div >
-}
+} 

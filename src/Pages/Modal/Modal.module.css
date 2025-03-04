@@ -1,0 +1,237 @@
+.mainContainer{
+  
+}
+
+.modal {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.firstSection {
+    background-image: url(../../Assets/Images/modal-background.png);
+    background-size: cover;
+    height: 985px;
+    display: flex;
+    width: 100%;
+}
+
+.secondSection {
+    width: 100%;
+    
+}
+
+.modalContainer {
+    max-width: 1404px;
+    width: 85%;
+   position: relative;
+    top: -392px;
+    left: 80px;
+}
+
+.modalTitle {
+    font-size: 72px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.modalContent {
+    border: 1px solid rgba(196, 196, 196, 1);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.order {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 60px 80px;
+}
+
+.number {
+    font-size: 36px;
+    font-weight: 700;
+    color: rgba(62, 60, 65, 1);
+}
+
+.sum {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.sumText {
+    font-size: 36px;
+    font-weight: 400;
+    color: rgba(146, 143, 148, 1);
+}
+
+.sumNum {
+    font-size: 36px;
+    font-weight: 700;
+    color: rgba(62, 60, 65, 1);
+}
+
+.sumIcon {
+    width: 21px;
+    height: 27px;
+    background-image: url(../../Assets/Images/sum-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.modalIconsContainer {
+    width: 100%;
+    background-color: rgba(244, 243, 246, 1);
+    display: flex;
+    padding: 40px 80px;
+}
+
+.iconsContainer {
+    width: 776px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.modalIcon {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.liftIcon {
+    min-width: 128px;
+    min-height: 128px;
+    background-image: url(../../Assets/Images/modal-left-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.middleIcon{
+    min-width: 138px;
+    min-height: 138px;
+    background-image: url(../../Assets/Images/modal-middle-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.rightIcon{
+    min-width: 128px;
+    min-height: 128px;
+    background-image: url(../../Assets/Images/modal-right-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iconText{
+    font-size: 18px;
+    font-weight: 400;
+    width: 175px;
+    text-align: center;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.leftIconText{
+    width: 127px;
+}
+
+.clientontainer{
+    padding: 95px 82px;
+}
+.nameContainer{
+    margin-bottom: 50px;
+}
+
+.clientName{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.orderCompleted{
+    margin-bottom: 70px;
+    max-width: 900px;
+}
+
+.orderCompletedText{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.wishes{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.modalContentFooter{
+    background-color: rgba(255, 168, 0, 0.88);
+    padding: 50px 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+}
+
+.starsText{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.starsIconsContainer{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.starsIcon{
+    min-width: 40px;
+    height: 40px;
+    background-image: url(../../Assets/Images/Star-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.starsIcon:hover{
+    background-color: white;
+}
+
+.modalContentFooterBtn{
+    color: black;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 11px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+}

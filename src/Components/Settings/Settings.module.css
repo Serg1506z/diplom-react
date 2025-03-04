@@ -1,6 +1,6 @@
 .setting {
-    width: 360px;
-
+    width: 100%;
+    /* margin: auto; */
 }
 
 .settingDate {

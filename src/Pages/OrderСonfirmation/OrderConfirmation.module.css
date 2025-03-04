@@ -1,0 +1,238 @@
+.orderConfirmation {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+/* .mainContainer{
+    width: 100%;
+} */
+
+.midlleSection {
+    width: 100%;
+    display: flex;
+    padding: 96px 20px 0;
+    gap: 40px;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 180px;
+}
+
+.leftColumn {
+    min-width: 360px;
+    display: flex;
+}
+
+
+.rightColumn {
+    /* padding-left: 84px; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 800px;
+    max-width: 960px;
+}
+
+
+.passangers {
+    border: 1px solid rgba(146, 143, 148, 1);
+    max-width: 960px;
+}
+
+.passangersTitle {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(146, 143, 148, 1);
+    padding: 32px 0 32px 32px;
+}
+
+.passangersContent {
+    display: flex;
+}
+
+.leftPassangerContentColumn {
+    border-right: 1px solid rgba(229, 229, 229, 1);
+    max-width: 680px;
+    padding: 60px 0 90px 0;
+    width: 100%;
+}
+
+.passangerItem {
+    padding: 30px 0 35px 40px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.passangerItemIcon {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100px;
+    align-items: center;
+}
+
+.miidlePassangerItem {
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+    border-top: 1px solid rgba(229, 229, 229, 1);
+}
+
+.passangerIcon {
+    width: 68px;
+    height: 68px;
+    background-image: url(../../Assets/Images/passangerItemIcon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.passangerIconSub {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.passangerInitial {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.passangerGender {
+    color: rgba(146, 143, 148, 1);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.passangerDate {
+    color: rgba(146, 143, 148, 1);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.passangerDocument {
+    color: rgba(146, 143, 148, 1);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.rightPaseangerContentColumn {
+    width: 280px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.rightPaseangerContentColumnbtn {
+    width: 233px;
+    padding: 5px 0 12px;
+    background-color: transparent;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    /* margin: auto; */
+    border-radius: 5px;
+ 
+}
+
+
+.total{
+    display: flex;
+    width: 233px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    /* margin-top: auto; */
+}
+
+.totalSum{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.totalText{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+.totalSumNum{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.totalSumIcon{
+    width: 20px;
+    height: 30px;
+    background-image: url(../../Assets/Images/totalIcon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.paymentMethod{
+    max-width: 960px;
+    border: 1px solid rgba(196, 196, 196, 1);
+    margin-top: 45px;
+    margin-bottom: 120px;
+}
+
+.paymentMethodTitle{
+    border-bottom: 1px solid rgba(146, 143, 148, 1);
+    padding: 31px 031px 31px;
+}
+
+.paymentMethodTitleText{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+.paymentMethodFooter{
+    display: flex;
+    
+    
+}
+
+.paymentMethodFooterText{
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 680px;
+    width: 100%;
+    border-right: 1px solid rgba(229, 229, 229, 1);
+    padding: 44px 0 76px 33px;
+}
+
+.paymentMethodFooterBtn{
+    font-size: 24px;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 233px;
+    padding: 5px 0 12px;
+    margin:auto ;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+    .rightColumnBtn{
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        background-color: rgba(255, 168, 0, 1);
+        width: 233px;
+        border: none;
+        border-radius: 5px;
+        padding: 17px 0;
+       margin: auto 0 0 auto;
+     
+    }

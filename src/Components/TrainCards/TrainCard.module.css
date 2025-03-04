@@ -1,14 +1,15 @@
 .trainCard {
-    width: 959px;
-   height: 380px;
+    max-width: 959px;
+    height: 380px;
     border: 1px solid rgba(196, 196, 196, 1);
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+   margin-top: 130px;
+   width: 100%; 
 }
 
 .infoTrain {
-    width: 196px;
+    max-width: 196px;
     background-color: rgba(228, 224, 233, 1);
     padding-left: 42px;
     padding-top: 32px;
@@ -16,7 +17,7 @@
 
 .logoTrain {
     background-image: url(../../Assets/Images/logo-train.svg);
-    width: 86px;
+    max-width: 86px;
     height: 86px;
     border-radius: 50%;
     background-position: center;
@@ -40,34 +41,36 @@
     line-height: 18.75px;
 }
 
-.scheduleTrain{
+.scheduleTrain {
     display: flex;
     justify-content: space-between;
-    width: 470px;
-    padding: 54px 39px;
+    max-width: 470px;
+    gap: 20px;
+    padding: 54px 10px ;
 }
 
 .startTime,
- .finishTime{
+.finishTime {
     font-weight: 800;
     font-size: 20px;
 }
 
 .startCity,
-.finishCity{
+.finishCity {
     font-size: 20px;
 }
 
 .startRailway,
-.finishRailway{
-    color: rgba(196, 196, 196, 1);;
+.finishRailway {
+    color: rgba(196, 196, 196, 1);
+    ;
 }
 
-.travelTime_time{
+.travelTime_time {
     color: rgba(196, 196, 196, 1);
 }
 
-.travelTime_icon{
+.travelTime_icon {
     background-image: url(../../Assets/Images/schedule-arr.svg);
     width: 30px;
     height: 20px;
@@ -79,9 +82,10 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    padding-left: 27px;
-    padding-right: 20px;
+    /* padding-left: 27px; */
+    /* padding-right: 20px; */
     padding-top: 27px;
+ 
     width: 290px;
     border-left: 1px solid rgba(229, 229, 229, 1);
 }
@@ -92,6 +96,7 @@
     gap: 33px;
     margin-bottom: 31px;
     align-items: end;
+    margin: auto;
 
 }
 

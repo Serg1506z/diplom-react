@@ -15,15 +15,19 @@ export default function SelectTrain() {
     <main className={style.mainContainer}>
       <SectionFindTicket />
       <ProgressBar />
-      {/* <section className={style.selectTicket}>
-        <Settings />
-        <TrainCard />
-       <section className={style.lastTicket}>
-       <h2 class={style.ticketsTitle}>последние билеты</h2>
-       <LastTicket />
-       </section>
-      </section> */}
-        {/* <ChangePage /> */}
+      <section className={style.middleSection}>
+        <div className={style.leftColumn}>
+            <Settings />
+          <div className={style.lastTicket}>
+            <h2 class={style.ticketsTitle}>последние билеты</h2>
+            <LastTicket />
+          </div>
+        </div> 
+        <div className={style.rightColumn}>
+          <TrainCard />
+        </div>
+      </section>
+      <ChangePage />
     </main>
     <Footer />
   </div>

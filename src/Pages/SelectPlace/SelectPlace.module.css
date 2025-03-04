@@ -1,0 +1,20 @@
+.mainContainer{
+    width: 100%;
+}
+
+.middleSection{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    padding: 0 20px;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.leftColumn{
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;    
+}
