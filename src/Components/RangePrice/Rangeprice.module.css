@@ -8,36 +8,79 @@
 }
 
 
-
+.rangepriceContainer input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+  }
+  
 .rangePrice{
     position: absolute;
-    min-width: 48px;
     display: flex;
     height: 100%;
     background-color: rgba(255, 168, 0, 1);
-    left: 0;
-    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
     border-radius: 20px;
 }
 
-.toggle{
-    width: 24px;
-    height: 24px;
+.rangepriceContainer input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 5px;
+  }
+.rangepriceContainer input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    height: 5px;
+}
+.rangepriceContainer input[type="range"]::-ms-track {
+    appearance: none;
+    height: 5px;
+}
+.rangepriceContainer input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    background-color: white;
+    cursor: pointer;
+    margin-top: -9px;
+    pointer-events: auto;
+    border-radius: 50%;
+    
+}
+.rangepriceContainer input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    cursor: pointer;
     border-radius: 50%;
     background-color: white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    pointer-events: auto;
+    border: none;
+}
+.rangepriceContainer input[type="range"]::-ms-thumb {
+    appearance: none;
+    height: 1.7em;
+    width: 1.7em;
     cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    pointer-events: auto;
+}
+.rangepriceContainer input[type="range"]:active::-webkit-slider-thumb {
+    background-color: #ffffff;
+    border: 1px solid #3264fe;
 }
 
-.toggler1{
-    left: 0;
-}
-.toggler2{
-    right: 0;
-}
 
 .rangePriceValue{
     display: flex;

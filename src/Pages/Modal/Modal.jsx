@@ -1,5 +1,4 @@
 import style from "./Modal.module.css"
-import ProgressBar from "../../Components/ProgressBar/ProgressBar"
 import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 

@@ -1,0 +1,7 @@
+.optionItem{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    width: 100%;
+    justify-content: space-between;
+}

@@ -1,67 +1,65 @@
 import { useEffect, useRef, useState } from "react"
 import style from "./Rangeprice.module.css"
 
-export default function Rangeprice() {
+export default function Rangeprice({min = 1900, max = 7000, setValue}) {
+    const [minPrice, setMinPrice] = useState(min);
+    const [maxPrice, setMaxPrice] = useState(max);
+    const [sliderTrack, setSliderTrack] = useState(null);
+    const minGap = 0
+    const [timeout1, setT1] = useState(null)
+    const [timeout2, setT2] = useState(null)
 
-    const [isToggle, setIsToggle] = useState({ boo: false, toggle: null })
-    const ref = useRef()
-    const rangePriceRef = useRef()
-    // const [toggler1, setToggler]
-    let toggler1 = null
-    let toggler2 = null
+
+    console.log(timeout1);
+    
+    useEffect(() => {
+        clearTimeout(timeout1)
+        if (maxPrice - minPrice <= minGap) {
+            setMinPrice(maxPrice - minGap)
+        }
+        setT1(setTimeout(() => setValue({min: minPrice, max: maxPrice}), 1000))
+        fillColor()
+    }, [minPrice])
 
     useEffect(() => {
-        window.addEventListener('mouseup', () => {
-            setIsToggle({ boo: false, toggle: null })
-        })
-    }, [])
-
-    function handle (e) {
-        if (!isToggle.boo) return
-        if(isToggle.toggle === 1) {
-            toggler1 = e.clientX - 300
-        } else {
-            toggler2 = (e.clientX - 578) * -1
+        clearTimeout(timeout2)
+        if (maxPrice - minPrice <= minGap) {
+            setMaxPrice(+minPrice + minGap)
         }
-
-        handleMove(e)
+        setT2(setTimeout(() => setValue({min: minPrice, max: maxPrice}), 1000))
+        fillColor()
+    }, [maxPrice])
+    
+    function handleMinChange(e) {
+        setMinPrice(e.target.value);
     }
 
-    function handleMove(e) {
-       
-        const containerWidth = rangePriceRef.current.clientWidth
-        console.log(toggler1);
-        console.log(toggler2);
-        
-        
+    function handleMaxChange(e) {
+        setMaxPrice(e.target.value);
 
-        if (isToggle.toggle === 1 && e.clientX > 300 && e.clientX < 550) {
-            // const left = e.clientX - 300  
-            if (containerWidth - 10 > 38) {
-                ref.current.style.left = toggler1 + 'px'
-                  ref.current.style.right = toggler2 + 'px'
-            }
-        } else if (isToggle.toggle === 2 && e.clientX > 290 && ref.current.clientWidth > 48) {
-            // const right = (e.clientX - 578) * -1
-            ref.current.style.right = toggler2 + 'px'
-            ref.current.style.left = toggler1 + 'px'
-        }
     }
 
+
+    function fillColor() {
+        const percent1 = (minPrice - min) / max * 100;
+        const percent2 = (maxPrice) / max * 100;
+        // setSliderTrack(`linear-gradient(to right, #dadae5 ${percent1}% , rgba(255, 168, 0, 1) ${percent1}% ,rgba(255, 168, 0, 1) ${percent2}%, #dadae5 ${percent2}%)`)
+    }
+ 
     return <div className={style.Rangeprice}>
         <div className={style.rangePriceTitle}>
             <span className={style.spanTitle}>от</span>
             <span className={style.spanTitle}>до</span>
         </div>
-        <div ref={rangePriceRef} className={style.rangepriceContainer} onMouseMove={handle}>
-            <div ref={ref} className={style.rangePrice}>
-                <div className={`${style.toggler1} ${style.toggle}`} onMouseDown={() => setIsToggle({ boo: true, toggle: 1 })}></div>
-                <div className={`${style.toggler2} ${style.toggle}`} onMouseDown={() => setIsToggle({ boo: true, toggle: 2 })} ></div>
+        <div  className={style.rangepriceContainer} >
+            <div  className={style.rangePrice} style={{ background: sliderTrack }}>
+                <input type="range" min={min} max={max} value={minPrice} onInput={handleMinChange} style={{ width: '100%', }}/>
+                <input type="range" min={min} max={max} value={maxPrice} onInput={handleMaxChange} style={{ width: '100%', }}/>
             </div>
         </div>
         <div className={style.rangePriceValue}>
-            <span className={style.spanValue}>1920</span>
-            <span className={style.spanValue}>7000</span>
+            <span className={style.spanValue}>{minPrice}</span>
+            <span className={style.spanValue}>{maxPrice}</span>
         </div>
     </div>
 }

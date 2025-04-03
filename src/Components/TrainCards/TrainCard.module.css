@@ -1,10 +1,10 @@
 .trainCard {
     max-width: 959px;
-    height: 380px;
+    min-height: 268px;
     border: 1px solid rgba(196, 196, 196, 1);
     display: flex;
     justify-content: space-between;
-   margin-top: 130px;
+   margin-top: 45px;
    width: 100%; 
 }
 
@@ -144,8 +144,8 @@
 
 .trainPlace_icon {
     width: 92px;
-    height: 20px;
-    background-image: url(../../Assets/Images/train-place__icon.svg);
+    display: flex;
+    gap: 10px;
     margin-bottom: 19px;
 }
 

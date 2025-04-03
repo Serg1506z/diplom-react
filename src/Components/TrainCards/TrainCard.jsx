@@ -1,54 +1,67 @@
 import style from "./TrainCard.module.css"
+import {ReactComponent as Rocket} from '../../Assets/Images/rocket.svg' 
+import {ReactComponent as Wifi} from '../../Assets/Images/wifi.svg' 
+import {ReactComponent as Cofe} from '../../Assets/Images/cofe.svg'
 
 
-export default function TrainCard() {
-    return <div class={style.trainCard}>
-        <div class={style.infoTrain}>
-            <div class={style.logoTrain}></div>
-            <div class={style.numberTrain}>116С</div>
-            <div class={style.trainStops}>Адлер
-                Москва Санкт-Петербург</div>
-        </div>
-        <div class={style.scheduleTrain}>
-            <div class={style.startTrain}>
-                <div class={style.startTime}>00:10</div>
-                <div class={style.startCity}>Москва</div>
-                <div class={style.startRailway}>Курский вокзад</div>
-            </div>
-            <div class={style.travelTime}>
-                <div class={style.travelTime_time}>9 : 42 </div>
-                <div class={style.travelTime_icon}></div>
-            </div>
-            <div class={style.finishTrain}>
-                <div class={style.finishTime}>9:52</div>
-                <div class={style.finishSity}>Санкт-петербург</div>
-                <div class={style.finishRailway}>Ладожский вокзад</div>
+
+export default function TrainCard({route}) {
+
+    console.log(route);
+    
+
+    return <div className={style.trainCard}>
+        <div className={style.infoTrain}>
+            <div className={style.logoTrain}></div>
+            <div className={style.numberTrain}>{route?.departure?.train?.name}</div>
+            <div className={style.trainStops}>
+                <p>{route?.departure?.from?.city.name} - {route?.departure?.to?.city.name}</p>
             </div>
         </div>
-        <div class={style.trainPrice}>
-            <div class={style.categoriPlaces}>
-                <div class={style.categoriPlace}>
-                    <p class={style.placeTitle}>Сидячий</p>
-                    <div class={style.quantity}>88</div>
-                    <div class={style.placePraice}><span class={style.textPraice}>от</span>1 920</div>
+        <div className={style.scheduleTrain}>
+            <div className={style.startTrain}>
+                <div className={style.startTime}>{new Date(route?.departure?.from?.datetime * 1000).toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit'})}</div>
+                <div className={style.startCity}>{route?.departure?.from?.city.name}</div>
+                <div className={style.startRailway}>{route?.departure?.from?.railway_station_name}</div>
+            </div>
+            <div className={style.travelTime}>
+                <div className={style.travelTime_time}>{new Date(new Date(route?.departure?.to?.datetime * 1000) - new Date(route?.departure?.from?.datetime * 1000) - 10800000).toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit'})}</div>
+                <div className={style.travelTime_icon}></div>
+            </div>
+            <div className={style.finishTrain}>
+                <div className={style.finishTime}>{new Date(route?.departure?.to?.datetime * 1000).toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit'})}</div>
+                <div className={style.finishSity}>{route?.departure?.to?.city.name}</div>
+                <div className={style.finishRailway}>{route?.departure?.to?.railway_station_name}</div>
+            </div>
+        </div>
+        <div className={style.trainPrice}>
+            <div className={style.categoriPlaces}>
+                {route?.available_seats_info?.fourth && <div className={style.categoriPlace}>
+                    <p className={style.placeTitle}>Сидячий</p>
+                    <div className={style.quantity}>{route.available_seats_info.fourth}</div>
+                    <div className={style.placePraice}><span className={style.textPraice}>от</span>{route?.departure?.price_info.fourth?.bottom_price}</div>
+                </div>}
+                {route?.available_seats_info?.third && <div className={style.categoriPlace}>
+                    <p className={style.placeTitle}>Плацкарт</p>
+                    <div className={style.quantity}>{route?.available_seats_info?.third}</div>
+                    <div className={style.placePraice}><span className={style.textPraice}>от</span>{route?.departure?.price_info.third?.bottom_price}</div>
+                </div>}
+               {route?.available_seats_info?.second && <div className={style.categoriPlace}>
+                    <p className={style.placeTitle}>Купе</p>
+                    <div className={style.quantity}>{route.available_seats_info.second}</div>
+                    <div className={style.placePraice}><span className={style.textPraice}>от</span>{route?.departure?.price_info.second?.bottom_price}</div>
+                </div>}
+                {route.available_seats_info.first && <div className={style.categoriPlace}>
+                    <p className={style.placeTitle}>Люкс</p>
+                    <div className={style.quantity}>{route.available_seats_info.first}</div>
+                    <div className={style.placePraice}><span className={style.textPraice}>от</span>{route?.departure?.price_info.first?.bottom_price}</div>
+                </div>}
+                <div className={style.trainPlace_icon}>
+                    <Wifi fill={route.departure.have_wifi ? '#FFA800' : "#C4C4C4"} stroke={route.departure.have_wifi ? '#FFA800' : "#C4C4C4"}/>
+                    <Rocket fill={route.departure.is_express ? '#FFA800' : "#C4C4C4"} stroke={route.departure.is_express ? '#FFA800' : "#C4C4C4"}/>
+                    <Cofe fill={route.departure.have_air_conditioning ? '#FFA800' : "#C4C4C4"} stroke={route.departure.have_air_conditioning ? '#FFA800' : "#C4C4C4"}/>
                 </div>
-                <div class={style.categoriPlace}>
-                    <p class={style.placeTitle}>Плацкарт</p>
-                    <div class={style.quantity}>55</div>
-                    <div class={style.placePraice}><span class={style.textPraice}>от</span>2 530</div>
-                </div>
-                <div class={style.categoriPlace}>
-                    <p class={style.placeTitle}>Купе</p>
-                    <div class={style.quantity}>24</div>
-                    <div class={style.placePraice}><span class={style.textPraice}>от</span>3 820</div>
-                </div>
-                <div class={style.categoriPlace}>
-                    <p class={style.placeTitle}>Люкс</p>
-                    <div class={style.quantity}>15</div>
-                    <div class={style.placePraice}><span class={style.textPraice}>от</span>4 950</div>
-                </div>
-                <div class={style.trainPlace_icon}></div>
-                <button class={style.selectPlace}>Выбрать места</button>
+                <button className={style.selectPlace}>Выбрать места</button>
             </div>
         </div>
     </div >

@@ -1,6 +1,7 @@
 import React, { useState ,useEffect, useRef} from 'react'
 import './DoubleScrollBar.css';
 
+
 export const DoubleScrollBar = ({min,max,step,className,onChange}) => {
     const [inputFrom,setInputFrom ] = useState(min);
     const [inputTo,setInputTo ] = useState(max);

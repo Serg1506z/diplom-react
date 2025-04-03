@@ -7,27 +7,49 @@
    
 }
 
+.viewText{
+    display: flex;
+    gap: 5px;
+}
+
+.accept_limit{
+    color: #928F94;
+    cursor: pointer;
+}
+
+.active{
+    color: black;
+}
+
 .middleSection{
     width: 100%;
     display: flex;
     gap: 50px;
     /* justify-content: space-evenly; */
     justify-content: center;
-    padding: 0 20px;
+    padding: 90px 20px;
     margin: auto;
+  
 }
 
 .leftColumn{
     min-width: 360px;
     display: flex;
     flex-direction: column;
-    padding: 90px 0;
+   
     
 }
 
 .rightColumn{
-    width: 100%;
-    min-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sortTicket{
+    display: flex;
+    justify-content: space-between;
+    max-width: 959px;
+
 }
 
 .lastTicket{

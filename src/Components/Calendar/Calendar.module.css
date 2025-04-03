@@ -1,0 +1,10 @@
+.calendar__container{
+    position: absolute;
+    top: 120%;
+    width: 325px;
+    /* height: 200px; */
+    background-color: gray;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 9999;
+}
