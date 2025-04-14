@@ -127,17 +127,27 @@
     padding-left: 33px;
     padding-top: 33px;
     padding-bottom: 38px;
-
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 100px;
+    transition: 0.8s;
 }
 
 .saidTitle {
     margin-left: 12px;
 }
 
+.visiblePart{
+    display: flex;
+}
+
+.settingSaid_active{
+    max-height: 800px;
+}
+
 .settingBtn {
     width: 32px;
     height: 26px;
-    
     border-radius: 5px;
     border: none;
 }
@@ -193,4 +203,8 @@
 .selectDate:disabled{
     /* color: #E5E5E5; */
     background-color: white;
+}
+
+.hiddenPart{
+    margin-top: 25px;
 }
