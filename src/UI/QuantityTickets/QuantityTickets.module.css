@@ -1,0 +1,27 @@
+
+.quantityTickets{
+    margin-top: 41px;
+}
+.quantityTicketsContainer{
+    display: flex;
+    gap: 3px;
+}  
+
+.quantityTicketsTitle{
+    margin-left: 19px;
+    margin-bottom: 13px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.quantityTicketsItem{
+    padding: 20px 40px;
+    min-width: 300px;
+    background-color: #F7F6F6;
+}
+
+.quantityTicketsItem input {
+    width: 100%;
+    height: 50px;
+    padding: 15px 17px;
+    margin-bottom: 23px;
+}

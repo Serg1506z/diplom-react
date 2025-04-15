@@ -1,0 +1,50 @@
+.react-calendar{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+.react-calendar__navigation{
+    display: flex;
+}
+
+.react-calendar__month-view__weekdays{
+    display: none !important;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth{
+    color: #E5E5E5;
+}
+
+.react-calendar__navigation__label{
+    font-size: 18px;
+    border: none;
+}
+
+.react-calendar__month-view__days__day{
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+.react-calendar__navigation__arrow{
+    border: none;
+    width: 20px;
+}
+
+.react-calendar__navigation__prev2-button{
+    display: none;
+}
+
+.react-calendar__navigation__next2-button{
+    display: none;
+}
+
+.react-calendar__tile{
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.react-calendar__tile--active{
+    background-color: #ffcf6e;
+}

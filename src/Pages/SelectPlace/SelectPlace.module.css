@@ -1,0 +1,68 @@
+.mainContainer{
+    width: 100%;
+}
+
+.middleSection{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    padding: 0 20px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 120px;
+}
+
+.leftColumn{
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.rightColumn{
+    
+}
+
+.nextBtn{
+    padding: 16px 70px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: #FFA800;
+    border: none;
+    float: right;
+    margin-top: 100px;
+}
+
+.scrollContainer{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 800px;
+    /* max-height: calc(100vh - 300px); */
+    gap: 54px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .scrollContainer::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  .scrollContainer::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  .scrollContainer::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.placeCardTitle{
+    font-size: 30px;
+    font-weight: medium;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}

@@ -1,23 +1,44 @@
 .paymentContainer{
-    width: 1920px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.mainContainer{
+    width: 100%;
+    padding-bottom: 40px;
+
 }
 
 .middleSection{
     width: 100%;
     display: flex;
-    padding-top: 95px;
-    padding-left: 258px;
-    padding-bottom: 150px;
+    gap: 50px;
+    justify-content: center;
+   
+    margin: auto;
+    padding: 96px 20px 0;
 }
+
+.leftSection{
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
 .rightSection{
     display: flex;
     flex-direction: column;
+    /* width: 100%;
+    min-width: 800px;
+    padding: 90px 0;
+    align-items: center; */
 }
 
 .personalData{
-    width: 958px;
+    max-width: 958px;
     border: 1px solid  rgba(196, 196, 196, 1);
-    margin-left: 85px;
 }
 
 .personalDataTitle{

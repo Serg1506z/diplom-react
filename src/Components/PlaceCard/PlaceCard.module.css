@@ -1,0 +1,18 @@
+.placeCardTitle{
+    font-size: 30px;
+    font-weight: medium;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.placeCardContainer{
+    max-width: 959px;
+    background-color: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    /* height: 1295px; */
+    width: 100%;
+    padding: 36px 0;
+  
+}
+
+

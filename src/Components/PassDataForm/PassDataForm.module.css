@@ -1,15 +1,16 @@
 .PassengerDataForm {
-    width: 960px;
+    max-width: 960px;
     border: 1px solid rgba(196, 196, 196, 1);
     display: flex;
     flex-direction: column;
     margin-bottom: 45px;
+    padding-top: 36px;
 }
 
 
 
 .passportDataAge {
-    width: 280px;
+    max-width: 280px;
     height: 50px;
     margin-bottom: 45px;
     margin-top: 38px;
@@ -17,9 +18,10 @@
     font-size: 24px;
     font-weight: 400;
     border-radius: 5px;
+    padding: 0 36px;
 }
 
-label{
+.PassengerDataForm label{
     margin-bottom: 10px;
 }
 
@@ -54,6 +56,8 @@ label{
 
 .genderBirthay{
     display: flex;
+    gap: 36px;
+    padding: 0 36px;
 }
 
 .birthday{
@@ -71,7 +75,7 @@ label{
 }
 
 .birthdayInput{
-    width: 205px;
+    max-width: 205px;
     height: 50px;
     padding: 20px;
     font-size: 24px;
@@ -80,9 +84,10 @@ label{
 }
 
 .checkBoxInput{
-    width: 28px;
+    max-width: 28px;
     height: 28px;
-   
+  
+    
 }
 
 .checkBox{
@@ -95,7 +100,7 @@ label{
 }
 
 .PassengerDataSelect{
-    width: 205px;
+    max-width: 205px;
     height: 50px;
     font-size: 18px;
     font-weight: 400;
@@ -111,10 +116,11 @@ label{
     color: rgba(146, 143, 148, 1);
     font-size: 16px;
     font-weight: 400;
+    max-width: 280px;
 }
 
 .passportDatainput {
-    width: 205px;
+    max-width: 205px;
     height: 50px;
 
 }
@@ -125,7 +131,7 @@ input{
 }
 
 .PassengerDataFormBtn{
-    width: 303px;
+    max-width: 303px;
     font-size: 24px;
     font-weight: 700;
     padding: 12px;

@@ -1,5 +1,5 @@
 .Passengers{
-    width: 1920px;
+    max-width: 1920px;
 }
 
 .mainContainer{
@@ -10,21 +10,27 @@
 .middleSection{
     width: 100%;
     display: flex;
-    padding: 95px;
+    padding: 96px 20px 0;
+    gap: 40px;
+    justify-content: center;
+    margin: auto;
 }
 
 .leftSection{
-    margin-left: 260px;
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .rightSection{
-    padding-left: 84px;
+    /* padding-left: 84px; */
     display: flex;
     flex-direction: column;
 }
 
 .addPassenger{
-    width: 960px;
+    max-width: 960px;
     display: flex;
     border: 1px solid rgba(196, 196, 196, 1);
     padding: 26px 40px 32px 26px;

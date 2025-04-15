@@ -12,7 +12,7 @@
 
 .headerSection_input input{
     padding-left: 21px;
-    padding-right: 13px;
+    padding-right: 40px;
 }
 
 .headerSection_title{
@@ -35,16 +35,33 @@
 .inputDate{
     display: flex;
     gap: 32px;
-    width: 682px;
+    width: 100%;
 }
 .selectDate{
-    width: 325px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.selectDate::placeholder{
+    color: #E5E5E5;
+}
+
+.selectDate:disabled{
+    /* color: #E5E5E5; */
+    background-color: white;
+}
+
+.date{
+    text-transform: uppercase;
 }
 
 
 .inputWay{
     margin-bottom: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 .changeInput{
     width: 24px;
@@ -53,6 +70,7 @@
     background-color: transparent;
     border-radius: 50%;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -68,4 +86,25 @@
     margin-bottom: 60px;
     font-weight: 700;
     width: 323px;
+}
+
+.selectDate_dateBtn:disabled{
+    opacity: 0.6;
+}
+
+
+.input_container{
+    width: 325px;
+    height: 60px;
+    position: relative;
+}
+
+.inputIcon{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+    width: 24px;
+    cursor: pointer;
 }

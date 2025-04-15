@@ -1,7 +1,8 @@
 .container {
     display: flex;
     align-items: center;
-    gap:33px;
+    gap:65px;
+    justify-content: space-between;
 }
 
 .block {
@@ -15,6 +16,10 @@
 
 .block_active{
     background-color: rgba(252, 220, 157, 1);
+}
+
+.text{
+    min-width: 102px;
 }
 
 

@@ -1,0 +1,72 @@
+import Header from '../../Components/Header/Header'
+import style from './SelectPlace.module.css'
+import Footer from '../../Components/Footer/Footer'
+import SectionFindTicket from "../../Components/SectionFindeTicket/SectionFindTicket"
+import ProgressBar from "../../Components/ProgressBar/ProgressBar"
+import Settings from "../../Components/Settings/Settings"
+import LastTicket from "../../Components/LastTicket/LastTicket"
+import PlaceCard from '../../Components/PlaceCard/PlaceCard'
+import { useDispatch, useSelector } from "react-redux"
+import { useEffect, useState } from "react"
+import { getRoutesThunk } from "../../Redux/Slices/Route/thunks"
+import { useParams } from 'react-router-dom'
+import { getSeatsThunk } from '../../Redux/Slices/Seats/thunks'
+import { setFilterSettings } from '../../Redux/Slices/Seats'
+
+
+export default function SelectPlace() {
+    const dispatch = useDispatch()
+    const {id} = useParams()
+    const seats = useSelector(state => state.seats.seats)
+    const routes = useSelector(state => state.route.routes)
+    const value = useSelector(state => state.seats.filterSettings)
+    const [currentRoute, setCurrentRoute] = useState({})
+
+    useEffect(() => {
+        if (!routes.length) return
+        setCurrentRoute(routes.find(route => route.departure._id == id))
+    }, [routes])
+
+    useEffect(() => {
+        if (!currentRoute?.departure?._id) return
+        dispatch(setFilterSettings({...value, id : currentRoute.departure._id}))
+    }, [currentRoute])
+
+    useEffect(() => {
+        if(!value.id) return
+        dispatch(getSeatsThunk(value))
+    }, [value])
+
+    function handleSubmit (e) {
+        e.preventDefault()    
+        dispatch(getRoutesThunk({...value,}))
+      }
+
+    return <div className={style.SelectPlace}>
+        <Header />
+        <main className={style.mainContainer}>
+            <SectionFindTicket value={value} handleSubmit={handleSubmit} />
+            <ProgressBar />
+            <section className={style.middleSection}>
+                <div className={style.leftColumn}>
+                    <Settings />
+                    <div className={style.lastTicket}>
+                        <h2 className={style.ticketsTitle}>последние билеты</h2>
+                        <LastTicket />
+                    </div>
+                </div> 
+                <div className={style.rightColumn}>
+                    <h2 className={style.placeCardTitle}>Выбор мест</h2>
+                    <div className={style.scrollContainer}>
+                        {seats.map(item => {
+                            return <PlaceCard currentRoute={currentRoute} seats={item} />
+                        })}
+                    </div>
+                    <button className={style.nextBtn}>Далее</button>
+                </div>
+                
+            </section>
+        </main>
+        <Footer />
+    </div>
+}

@@ -2,19 +2,16 @@
 
 
 .changePage {
-    width: 564px;
+    /* width: 564px; */
     display: flex;
     justify-content: space-between;
-    margin-left: auto;
-    margin-right: 0;
-    margin-top: 142px;
-    margin-bottom: 193px;
-    margin-right: 256px;
-    margin-left: auto;
+    margin: auto auto 195px;
+    gap: 35px;
+    max-width: 1050px;
 }
 
 .pageBtn {
-    width: 85px;
+    min-width: 85px;
     height: 75px;
     border: 2px solid rgba(196, 196, 196, 1);
     border-radius: 5px;
@@ -27,22 +24,16 @@
     background-repeat: no-repeat;
 }
 
-.page1 {
-    background-image: url(../../Assets/Images/page1.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+.pageBtn{
+    color: #928F94;
+    font-size: 30px;
+    font-weight: 700;
 }
 
-.page2 {
-    background-image: url(../../Assets/Images/page2.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.page3 {
-    background-image: url(../../Assets/Images/page3.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+.active{
+    background-color: #FFA800;
+    color: white;
+    border-color: #FFA800;
 }
 
 .btnForward {

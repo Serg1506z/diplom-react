@@ -1,6 +1,6 @@
 .setting {
-    width: 360px;
-
+    width: 100%;
+    /* margin: auto; */
 }
 
 .settingDate {
@@ -26,6 +26,7 @@
     color: white;
     padding-left: 70px;
     padding-top: 30px;
+    padding-right: 36px;
 }
 
 .optionItems {
@@ -159,4 +160,37 @@
 .settingBtn_reverce{
     background-image: url(../../Assets/Images/settingBtn_reverce.svg);
     background-color: transparent;
+}
+
+.input__container input{
+    min-height: 60px;
+}
+
+.input_container{
+    width: 325px;
+    height: 60px;
+    position: relative;
+}
+
+.selectDate {
+    width: 100%;
+    /* max-width: 325px; */
+    /* height: 60px; */
+    font-size: 18px;
+    padding: 18px 10px 18px 10px;
+}
+
+.inputIcon{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+    width: 24px;
+    cursor: pointer;
+}
+
+.selectDate:disabled{
+    /* color: #E5E5E5; */
+    background-color: white;
 }

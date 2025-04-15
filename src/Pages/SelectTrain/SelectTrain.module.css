@@ -7,21 +7,55 @@
    
 }
 
-.selectTicket{
-    width: 100%;
+.viewText{
     display: flex;
-    padding-left: 258px;
-    padding-top: 95px;
-    padding-right: 256px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 5px;
 }
 
-.leftSection{
+.accept_limit{
+    color: #928F94;
+    cursor: pointer;
+}
+
+.active{
+    color: black;
+}
+
+.middleSection{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    padding: 90px 20px;
+    margin: auto;
+  
+}
+
+.leftColumn{
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.rightColumn{
     display: flex;
     flex-direction: column;
 }
 
+.sortTicket{
+    display: flex;
+    justify-content: space-between;
+    max-width: 959px;
+
+}
+
+.lastTicket{
+    max-width: 380px;
+    margin: auto;
+}
 
 
 .ticketsTitle {

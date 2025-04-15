@@ -9,7 +9,7 @@ import Initials from "../../Components/Initials/Initials"
 export default function Payment() {
     return <div className={style.paymentContainer}>
         <Header />
-        <section className={style.mainContainer}>
+        <main className={style.mainContainer}>
             <SectionFindTicket />
             <ProgressBar />
             <div className={style.middleSection}>
@@ -53,7 +53,7 @@ export default function Payment() {
                     <button className={style.personalDataBtn}>КУПИТЬ БИЛЕТЫ</button>
                 </section>
             </div>
-        </section>
+        </main>
         <Footer />
     </div>
 }

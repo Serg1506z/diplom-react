@@ -1,0 +1,23 @@
+.trainInfo{
+    margin-top: 32px;
+    background-color: #F7F6F6;
+    padding: 17px 35px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gray{
+    color: #928F94;
+}
