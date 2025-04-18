@@ -104,6 +104,7 @@
     color: white;
     font-size: 30px;
     padding-left: 32px;
+    padding-right: 32px;
     padding-top: 37px;
     padding-bottom: 63px;
 }
@@ -125,13 +126,41 @@
     font-size: 30px;
     display: flex;
     padding-left: 33px;
+    padding-right: 33px;
     padding-top: 33px;
     padding-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    overflow: hidden;
+    transition: 0.8s;
+}
 
+.settingSaid_active{
+    max-height: 500px;
+}
+
+.container{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 .saidTitle {
     margin-left: 12px;
+}
+
+.rangepriceTitle{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.rangeContainer{
+    margin-bottom: 20px;
+}
+
+.rangeContainerSecond{
+    text-align: end;
 }
 
 .settingBtn {
@@ -148,7 +177,7 @@
     background-image: url(../../Assets/Images/setting-btn__add.svg);
     background-color: transparent;
     border: none;
-    margin-right: 37px;
+ 
     margin-left: auto;
 }
 

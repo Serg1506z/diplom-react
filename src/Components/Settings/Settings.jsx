@@ -12,8 +12,10 @@ import ToggleSetting from "../ToggleSetting/ToggleSetting"
 export default function Settings() {
     const value = useSelector(state => state.route.filterSettings)
     const [isOpen, setIsOpen] = useState([false, false])
+    const [blockIsOpen, setBlockIsOpen] = useState([false, false])
     const setValue = (value) => dispatch(setState(value)) 
     const dispatch = useDispatch()
+    
     
     useEffect(() => {
         dispatch(getRoutesThunk({...value}))
@@ -53,16 +55,37 @@ export default function Settings() {
             <Rangeprice max={7000} min={1920} setValue={({min, max}) => dispatch(setState({...value, price_from : min, price_to : max}))}/>
         </div>
         <div className={style.asideLine}></div>
-        <div className={style.settingSaid}>
-            <button className={`${style.settingBtn} ${style.settingBtn_forward}`}></button>
+        <div className={`${style.settingSaid} ${blockIsOpen[0] && style.settingSaid_active}`}>
+        <div className={style.container}>
+        <button className={`${style.settingBtn} ${style.settingBtn_forward}`}  ></button>
             <p className={style.saidTitle}>Туда</p>
-            <button className={style.settingBtn_add}></button>
+            <button className={style.settingBtn_add} onClick={() => setBlockIsOpen([!blockIsOpen[0], blockIsOpen[1]])}></button>
+        </div>
+        <div className={style.rangeContainer}>
+        <p className={style.rangepriceTitle}>Время отбытия</p>
+        <Rangeprice  max={24} min={0} setValue={() =>{}}/>
+        </div>
+           <div className={`${style.rangeContainer} ${style.rangeContainerSecond}`}>
+           <p className={style.rangepriceTitle}>Время прибытия</p>
+           <Rangeprice max={24} min={0} setValue={() => {}}/>
+           </div>
         </div>
         <div className={style.asideLine}></div>
-        <div className={style.settingSaid}>
-            <button className={`${style.settingBtn} ${style.settingBtn_reverce}`}></button>
+        <div className={`${style.settingSaid} ${blockIsOpen[1] && style.settingSaid_active}`}>
+        <div className={style.container}>
+        <button className={`${style.settingBtn} ${style.settingBtn_reverce}`} ></button>
             <p className={style.saidTitle}>Обратно</p>
-            <button className={style.settingBtn_add}></button>
+            <button className={style.settingBtn_add} onClick={() => setBlockIsOpen([blockIsOpen[0],!blockIsOpen[1]])}></button>
         </div>
+       <div className={style.rangeContainer}>
+       <p className={style.rangepriceTitle}>Время отбытия</p>
+       <Rangeprice max={24} min={0} setValue={() => {}}/>
+       </div>
+           <div className={`${style.rangeContainer} ${style.rangeContainerSecond}`}>
+           <p className={style.rangepriceTitle}>Время прибытия</p>
+           <Rangeprice max={24} min={0} setValue={() => {}}/>
+           </div>
+           </div>
+        
     </section>
 }
