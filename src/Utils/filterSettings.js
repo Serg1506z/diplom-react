@@ -28,3 +28,14 @@ export const filterSettings = {
     offset: '',
     sort : ''
 }
+
+export const filterSeatsSettings  = {
+    id : '',
+    have_first_class : false,
+    have_second_class : false,
+    have_third_class : false,
+    have_fourth_class : false,
+    have_wifi : false,
+    have_air_conditioning : false,
+    have_express : false,
+}

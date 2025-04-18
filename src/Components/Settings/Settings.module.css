@@ -127,27 +127,17 @@
     padding-left: 33px;
     padding-top: 33px;
     padding-bottom: 38px;
-    flex-direction: column;
-    overflow: hidden;
-    max-height: 100px;
-    transition: 0.8s;
+
 }
 
 .saidTitle {
     margin-left: 12px;
 }
 
-.visiblePart{
-    display: flex;
-}
-
-.settingSaid_active{
-    max-height: 800px;
-}
-
 .settingBtn {
     width: 32px;
     height: 26px;
+    
     border-radius: 5px;
     border: none;
 }
@@ -170,4 +160,37 @@
 .settingBtn_reverce{
     background-image: url(../../Assets/Images/settingBtn_reverce.svg);
     background-color: transparent;
+}
+
+.input__container input{
+    min-height: 60px;
+}
+
+.input_container{
+    width: 325px;
+    height: 60px;
+    position: relative;
+}
+
+.selectDate {
+    width: 100%;
+    /* max-width: 325px; */
+    /* height: 60px; */
+    font-size: 18px;
+    padding: 18px 10px 18px 10px;
+}
+
+.inputIcon{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+    width: 24px;
+    cursor: pointer;
+}
+
+.selectDate:disabled{
+    /* color: #E5E5E5; */
+    background-color: white;
 }
