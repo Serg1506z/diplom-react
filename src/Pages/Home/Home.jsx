@@ -8,6 +8,7 @@ import {ReactComponent as Globus} from "../../Assets/Images/iconItem3.svg"
 import HomeSlider from "../../Components/Slider/HomeSlider"
 import { slides } from "../../Utils/Slides"
 
+
 export default function Home() {
     return <div className={style.Home}>
         <Header/>

@@ -1,0 +1,37 @@
+.carlayout{
+    max-width: 940px;
+    height: 140px;
+    border: 3px solid rgb(124, 124, 124);
+    display: flex;
+}
+
+.room{
+    width: 117px;
+    height: 80px;
+    border-right: 3px solid rgb(124, 124, 124);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.last{
+    border-right: none;
+}
+.plaseContainer{
+    border-bottom: 3px solid rgb(124, 124, 124);
+}
+
+.plase{
+    display: flex;
+    width: 35px;
+    height: 50%;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.plase:hover{
+    background-color: rgb(120, 118, 118);
+    color: white;
+}
