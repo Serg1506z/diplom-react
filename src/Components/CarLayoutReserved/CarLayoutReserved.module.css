@@ -30,16 +30,14 @@
     display: flex;
     width: 35px;
     height: 50%;
-    background-color: lightgray;
+    background-color: gray;
+    color: white;
+    border: solid 2px transparent;
     justify-content: center;
     align-items: center;
     font-weight: 900;
 }
 
-.plase:hover{
-    background-color: rgb(120, 118, 118);
-    color: white;
-}
 
 .sideSeats{
     width: 100%;
@@ -58,7 +56,9 @@
 
 .sideSeatsPlase{
     width: 50%;
-    background-color: lightgray;
+    background-color: gray;
+    color: white;
+    border: solid 2px transparent;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -67,7 +67,11 @@
     border-right: none;
 }
 
-.sideSeatsPlase:hover{
-    background-color: rgb(120, 118, 118);
-    color: white;
-}
+.active{
+    border: solid 2px #FFA800;
+  }
+  
+  .available{
+      background-color: lightgray;
+      color: white;
+  }

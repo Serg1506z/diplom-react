@@ -57,7 +57,7 @@
 
 .rightSectionBtn{
     width: 222px;
-    background-color: rgba(146, 143, 148, 1);
+    background-color: #FFA800;
     color: white;
     font-size: 24px;
     font-weight: 700;
@@ -67,4 +67,9 @@
     margin-right:0;
     margin-top: auto;
     margin-bottom: 0;
+}
+
+.rightSectionBtn:disabled{
+    background-color: rgba(146, 143, 148, 1);
+    
 }

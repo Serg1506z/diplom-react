@@ -7,8 +7,6 @@ import { useNavigate } from "react-router-dom"
 
 export default function TrainCard({route}) {
     const navigate = useNavigate()
-    console.log(route);
-
     function handleClick () {
         navigate('/selectPlace/' + route.departure._id)
     }

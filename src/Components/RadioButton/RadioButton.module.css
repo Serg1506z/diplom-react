@@ -31,7 +31,7 @@
     display: none;
 }
 
-.radioButtonLabel:active {
+.active {
     background-color: rgba(255, 168, 0, 1);
 }
 

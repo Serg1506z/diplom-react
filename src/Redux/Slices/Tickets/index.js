@@ -6,7 +6,8 @@ export const initialState = {
         to: '',
         dateDeparte : '',
         deteArrival : '',
-    }
+    },
+    personalData : localStorage.getItem('personalData') ? JSON.parse(localStorage.getItem('personalData')) : []
 }
 
 export const TicketSlice = createSlice({
@@ -15,10 +16,14 @@ export const TicketSlice = createSlice({
     reducers: {
         setState : (state, action) => {
             state.form = action.payload
+        },
+        setPersonalData: (state, action) => {
+            state.personalData = action.payload
+            localStorage.setItem('personalData', JSON.stringify(action.payload))
         }
     }
 })
 
-export const {setState} = TicketSlice.actions
+export const {setState, setPersonalData} = TicketSlice.actions
 
 export default TicketSlice.reducer

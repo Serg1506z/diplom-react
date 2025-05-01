@@ -6,8 +6,6 @@ import {ReactComponent as Cofe} from '../../Assets/Icons/cofe-icon.svg'
 
 export default function NumberVam ({data}){
 
-    console.log(data);
-
     return <div className={style.NumberVamBlock}>
           <div className={style.vanTypeLine}>
             <p>Вагоны <span className={style.white}>07</span> 09</p>
@@ -15,7 +13,8 @@ export default function NumberVam ({data}){
         </div>
         <div className={style.vanTypeTable}>
             <div className={style.vanNumber}>
-                <h1>07</h1>
+                {/* Откуда брать номер вагона? */}
+                <h1>№?</h1>
                 <p>вагон</p>
             </div>
             <div className={style.vanTypeTable__container}>

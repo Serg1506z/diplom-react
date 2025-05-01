@@ -5,28 +5,50 @@ import SectionFindTicket from "../../Components/SectionFindeTicket/SectionFindTi
 import Footer from "../../Components/Footer/Footer"
 import TripDetails from "../../Components/TripDetails/TripDetails"
 import Initials from "../../Components/Initials/Initials"
+import { useSelector, useDispatch } from "react-redux"
+import { getRoutesThunk } from "../../Redux/Slices/Route/thunks"
+import { useState } from "react"
 
 export default function Payment() {
+    const value = useSelector(state => state.seats.filterSettings)
+    const dispatch = useDispatch()
+    const personalData = useSelector(state => state.tickets.personalData)
+    const currentSeats = useSelector(state => state.seats.currentSeats)
+    const [paymentData, setPaymentData] = useState({})
+
+    function handleSubmit (e) {
+        e.preventDefault()    
+        dispatch(getRoutesThunk({...value,}))
+    }
+
+    function handleSubmit(){
+
+    }
+
+    function handleInput(e) {
+        setPaymentData({...paymentData, [e.target.name] : e.target.value})
+    }
+
     return <div className={style.paymentContainer}>
         <Header />
         <main className={style.mainContainer}>
-            <SectionFindTicket />
+            <SectionFindTicket value={value} handleSubmit={handleSubmit} />
             <ProgressBar />
             <div className={style.middleSection}>
                 <section className={style.leftSection}>
-                    <TripDetails />
+                    <TripDetails currentSeats={currentSeats} />
                 </section>
                 <section className={style.rightSection}>
-                    <form className={style.personalData}>
+                    <form onSubmit={handleSubmit} className={style.personalData}>
                         <div className={style.personalDataTitle}><span className={style.titleText}>Персональные данные</span></div>
-                        <Initials />
+                        <Initials value={paymentData} setValue={setPaymentData} />
                         <div className={style.phone}>
                             <p className={style.phoneTitle}>Контактный телефон</p>
-                            <input type="text" className={style.PhoneInput} placeholder="+7 ___ ___ __ __" />
+                            <input type="text" name="phone" onInput={handleInput} className={style.PhoneInput} placeholder="+7 ___ ___ __ __" />
                         </div>
                         <div className={style.eMail}>
                             <p className={style.phoneTitle}>E-mail</p>
-                            <input type="email" className={style.PhoneInput} placeholder="inbox@gmail.ru" />
+                            <input type="email" name="email" onInput={handleInput} className={style.PhoneInput} placeholder="inbox@gmail.ru" />
                         </div>
                         <div className={style.paymentType}>
                             <div className={style.titleText}>Способ оплаты</div>
@@ -46,7 +68,7 @@ export default function Payment() {
                       <div className={style.cash}>
                       <div className={style.checkBoxBlock}>
                             <input type="radio" name="payment" className={style.checkBoxInput} />
-                            <span className={style.checkBoxText}>Онлайн</span>
+                            <span className={style.checkBoxText}>Наличными</span>
                         </div>
                       </div>
                     </form>

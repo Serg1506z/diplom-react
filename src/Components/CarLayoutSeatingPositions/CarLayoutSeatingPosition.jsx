@@ -1,6 +1,6 @@
 import style from "./CarLayoutSeatingPosition.module.css"
 
-export function CarLayoutSeatingPosition (){
+export default function CarLayoutSeatingPosition (){
     return <div className={style.carlayout}>
         <div className={style.plase}>1</div>
         <div className={style.plase}>2</div>

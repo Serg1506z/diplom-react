@@ -25,13 +25,20 @@
     display: flex;
     width: 35px;
     height: 50%;
-    background-color: lightgray;
+    background-color: gray;
     justify-content: center;
     align-items: center;
     font-weight: 900;
+    color: white;
+    border: solid 2px transparent;
 }
 
-.plase:hover{
-    background-color: rgb(120, 118, 118);
-    color: white;
-}
+
+.active{
+    border: solid 2px #FFA800;
+  }
+  
+  .available{
+      background-color: lightgray;
+      color: white;
+  }
