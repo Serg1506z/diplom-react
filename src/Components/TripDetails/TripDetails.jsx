@@ -1,5 +1,6 @@
 import style from "./TripDetails.module.css"
 import { useMemo } from "react";
+import { useState } from "react"
 
 export default function TripDetails({currentSeats}) {
 
@@ -22,6 +23,7 @@ export default function TripDetails({currentSeats}) {
     const travelTime = useMemo(() => new Date(new Date(currentSeats?.currentRoute?.departure?.to.datetime * 1000) - new Date(currentSeats?.currentRoute?.departure?.from.datetime * 1000)))
     
     // обратно
+     const [blockIsOpen, setBlockIsOpen] = useState([false, false])
 
     console.log(currentSeats);
     
@@ -38,7 +40,7 @@ export default function TripDetails({currentSeats}) {
                     <button className={style.forwardTitleBtn}></button>
                     <p className={style.aboutTraintitleText}>Туда</p>
                     <time className={style.titleTime}>{dateTo}</time>
-                    <button className={style.titleBtnRemove}></button>
+                    <button className={style.titleBtnRemove} onClick={() => setBlockIsOpen([!blockIsOpen[0], blockIsOpen[1]])}></button>
                 </div>
                 <div className={style.numberTrain}>
                     <div className={style.numberLeft}><p className={style.leftNumberText}>№ Поезда</p></div>
@@ -126,7 +128,7 @@ export default function TripDetails({currentSeats}) {
             <div className={style.passengersTitle}>
                 <div className={style.passengersIcon}></div>
                 <p className={style.passengersText}>Пассажиры</p>
-                <button className={style.passengersBtnRemove}></button>
+                <button className={style.titleBtnRemove} onClick={() => setBlockIsOpen([!blockIsOpen[0], blockIsOpen[1]])}></button>
             </div>
             <div className={style.passengerPrice}>
                 <p className={style.text}>{`${currentSeats.seats.length} Взрослых`}</p>

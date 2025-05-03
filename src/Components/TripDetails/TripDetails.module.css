@@ -80,6 +80,13 @@
     border-bottom: 1px solid white;
     padding-left: 27px;
     padding-right: 28px;
+    max-height: 80px;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.aboutTrain_active{
+    max-height: 500px;
 }
 
 .numberTrain {
@@ -190,6 +197,7 @@
 .city {
     color: white;
     font-size: 18px;
+    text-align: end;
 }
 
 .railway {
@@ -218,6 +226,13 @@
 .passengers{
     padding: 14px 28px 46px;
     border-bottom: 1px solid white;
+    max-height: 80px;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.passengers_active{
+    max-height: 300px;
 }
 
 .passengersIcon{
@@ -247,7 +262,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 33px;
-    align-items: start;
+    align-items: center;
 }
 
 .text{

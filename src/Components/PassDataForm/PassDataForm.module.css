@@ -137,7 +137,9 @@
 
 input{
     border-radius: 5px;
-    border: 1px solid rgba(146, 143, 148, 1)
+    border: 1px solid rgba(146, 143, 148, 1);
+    padding: 5px;
+    font-size: 20px;
 }
 
 .PassengerDataFormBtn{
