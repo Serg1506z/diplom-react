@@ -1,8 +1,21 @@
 import style from "./Modal.module.css"
 import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
+import { useSelector } from "react-redux"
+import { useNavigate } from "react-router-dom"
 
 export default function Modal() {
+  const navigate = useNavigate()
+  const currentSeats = useSelector(state => state.seats.currentSeats)
+  const personalData = useSelector(state => state.tickets.personalData)
+  const paymentData = useSelector(state => state.tickets.paymentData)
+
+  function handleClick(){
+    localStorage.clear()
+    navigate('/')
+    window.location.reload()
+  }
+
   return <div className={style.modal}>
     <Header />
     <main className={style.mainContainer}>
@@ -13,10 +26,10 @@ export default function Modal() {
         <div className={style.modalTitle}>Благодарим Вас за заказ!</div>
         <div className={style.modalContent}>
           <div className={style.order}>
-            <div className={style.number}>№Заказа 285АА</div>
+            <div className={style.number}>№Заказа {Math.floor(Math.random() * 1000)}АА</div>
             <div className={style.sum}>
               <div className={style.sumText}>сумма</div>
-              <div className={style.sumNum}>7 760</div>
+              <div className={style.sumNum}>{currentSeats.coach.price}</div>
               <div className={style.sumIcon}></div>
             </div>
           </div>
@@ -48,7 +61,7 @@ export default function Modal() {
           </div>
           <div className={style.clientontainer}>
             <div className={style.nameContainer}>
-              <span className={style.clientName}>Ирина Эдуардовна!</span>
+              <span className={style.clientName}>{paymentData.first_name} {paymentData.patronymic}!</span>
             </div >
             <div className={style.orderCompleted}>
               <div className={style.orderCompletedText}>Ваш заказ успешно оформлен.</div>
@@ -71,7 +84,7 @@ export default function Modal() {
                 <div className={style.starsIcon}></div>
               </div>
             </div>
-            <button className={style.modalContentFooterBtn}>вернуться на главную</button>
+            <button className={style.modalContentFooterBtn} onClick={handleClick}>вернуться на главную</button>
           </div>
         </div>
       </section>

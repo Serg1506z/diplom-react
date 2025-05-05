@@ -42,6 +42,7 @@
 .passangers {
     border: 1px solid rgba(146, 143, 148, 1);
     max-width: 960px;
+    margin-bottom: 40px;
 }
 
 .passangersTitle {
@@ -182,7 +183,6 @@
 .paymentMethod{
     max-width: 960px;
     border: 1px solid rgba(196, 196, 196, 1);
-    margin-top: 45px;
     margin-bottom: 120px;
 }
 

@@ -85,9 +85,7 @@
     transition: 0.8s;
 }
 
-.aboutTrain_active{
-    max-height: 500px;
-}
+
 
 .numberTrain {
     display: flex;
@@ -324,3 +322,8 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.container__active{
+    max-height: 800px;
+}
+

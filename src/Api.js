@@ -27,8 +27,16 @@ class Api {
         return await res.json()
     }
 
-    async orderTicket () {
+    async orderTicket (body) {
+        const res = await fetch(this.url + 'order', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body)
+        })
 
+        return await res.json()
     }
 
     async setSubscribe () {

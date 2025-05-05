@@ -7,7 +7,15 @@ export const initialState = {
         dateDeparte : '',
         deteArrival : '',
     },
-    personalData : localStorage.getItem('personalData') ? JSON.parse(localStorage.getItem('personalData')) : []
+    personalData : localStorage.getItem('personalData') ? JSON.parse(localStorage.getItem('personalData')) : [],
+    paymentData : localStorage.getItem('paymentData') ? JSON.parse(localStorage.getItem('paymentData')) : {
+        "first_name": "",
+        "last_name": "",
+        "patronymic": "",
+        "phone": "",
+        "email": "",
+        "payment_method": "cash" // или online
+    }
 }
 
 export const TicketSlice = createSlice({
@@ -20,10 +28,14 @@ export const TicketSlice = createSlice({
         setPersonalData: (state, action) => {
             state.personalData = action.payload
             localStorage.setItem('personalData', JSON.stringify(action.payload))
+        },
+        setPaymentData: (state, action) => {
+            state.paymentData = action.payload
+            localStorage.setItem('paymentData', JSON.stringify(action.payload))
         }
     }
 })
 
-export const {setState, setPersonalData} = TicketSlice.actions
+export const {setState, setPaymentData, setPersonalData} = TicketSlice.actions
 
 export default TicketSlice.reducer
