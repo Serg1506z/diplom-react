@@ -1,0 +1,30 @@
+.select{
+    position: relative;
+}
+.toggle{
+    cursor: pointer;
+
+}
+
+.value__name{
+    position: absolute;
+    right: -110px;
+    top: 0;
+    width: 105px;
+}
+
+.option{
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #FFCA62;
+}
+
+.options{
+    position: absolute;
+    right: -110px;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}

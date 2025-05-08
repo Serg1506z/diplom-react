@@ -58,7 +58,7 @@ export default function OrderConfirmation() {
         <Header />
         <main className={style.mainContainer}>
             <SectionFindTicket value={value} handleSubmit={handleSubmit} />
-            <ProgressBar />
+            <ProgressBar num={4} />
             <section className={style.midlleSection}>
                 <div className={style.leftColumn}>
                     <TripDetails currentSeats={currentSeats} />
@@ -103,7 +103,7 @@ export default function OrderConfirmation() {
                     <div className={style.paymentMethod}>
                         <div className={style.paymentMethodTitle}><span className={style.paymentMethodTitleText}>Способ оплаты</span></div>
                         <div className={style.paymentMethodFooter}>
-                            <div className={style.paymentMethodFooterText}>{paymentData.payment_method === 'cash' ? 'Наличные' : 'Онлайн'}</div>
+                            <div className={style.paymentMethodFooterText}>{paymentData.payment === 'cash' ? 'Наличные' : 'Онлайн'}</div>
                             <button className={style.paymentMethodFooterBtn} onClick={() => navigate('/payment')}>Изменить</button>
                         </div>
                     </div>

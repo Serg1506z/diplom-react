@@ -3,12 +3,17 @@ import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
+import { useState } from "react"
+import {ReactComponent as Star} from '../../Assets/Images/Star-icon.svg'
+
+const allStars = [1, 2, 3, 4, 5]
 
 export default function Modal() {
   const navigate = useNavigate()
   const currentSeats = useSelector(state => state.seats.currentSeats)
   const personalData = useSelector(state => state.tickets.personalData)
   const paymentData = useSelector(state => state.tickets.paymentData)
+  const [activeIndex, setActiveIndex] = useState(-1)
 
   function handleClick(){
     localStorage.clear()
@@ -77,11 +82,11 @@ export default function Modal() {
             <div className={style.stars}>
               <span className={style.starsText}>Оценить сервис</span>
               <div className={style.starsIconsContainer}>
-                <div className={style.starsIcon}></div>
-                <div className={style.starsIcon}></div>
-                <div className={style.starsIcon}></div>
-                <div className={style.starsIcon}></div>
-                <div className={style.starsIcon}></div>
+                {allStars.map((item, index) => {
+                  return <div key={index} onClick={() => setActiveIndex(index)} className={`${style.starsIcon}`}>
+                    <Star fill={activeIndex >= index ? 'white' : 'transparent'} />
+                  </div>
+                })}
               </div>
             </div>
             <button className={style.modalContentFooterBtn} onClick={handleClick}>вернуться на главную</button>

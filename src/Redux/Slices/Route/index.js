@@ -17,10 +17,13 @@ export const RouteSlice = createSlice({
         setState : (state, action) => {
             state.filterSettings = {...state.filterSettings, ...action.payload}
             localStorage.setItem('filterSettings', JSON.stringify(state.filterSettings))
+        },
+        setIsLoading : (state, action) => {
+            state.loading = action.payload
         }
     },
     extraReducers : Builder
 })
 
-export const {setState} = RouteSlice.actions
+export const {setState, setIsLoading} = RouteSlice.actions
 export default RouteSlice.reducer

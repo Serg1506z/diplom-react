@@ -33,11 +33,14 @@ export default function Payment() {
         dispatch(setPaymentData({...paymentData, [e.target.name] : e.target.value}))
     }
 
+    console.log(paymentData);
+    
+
     return <div className={style.paymentContainer}>
         <Header />
         <main className={style.mainContainer}>
             <SectionFindTicket value={value} handleSubmit={handleSubmit} />
-            <ProgressBar />
+            <ProgressBar num={3} />
             <div className={style.middleSection}>
                 <section className={style.leftSection}>
                     <TripDetails currentSeats={currentSeats} />
@@ -45,7 +48,7 @@ export default function Payment() {
                 <section className={style.rightSection}>
                     <form className={style.personalData}>
                         <div className={style.personalDataTitle}><span className={style.titleText}>Персональные данные</span></div>
-                        <Initials value={paymentData} setValue={handleInput} />
+                        <Initials value={paymentData} setValue={(data) => dispatch(setPaymentData(data))} />
                         <div className={style.phone}>
                             <p className={style.phoneTitle}>Контактный телефон</p>
                             <input type="text" name="phone" value={paymentData.phone} onInput={handleInput} className={style.PhoneInput} placeholder="+7 ___ ___ __ __" />
@@ -58,7 +61,7 @@ export default function Payment() {
                             <div className={style.titleText}>Способ оплаты</div>
                             <div className={style.paymentTypeCheckBox}>
                                 <div className={style.checkBoxBlock}>
-                                    <input type="radio" value={'online'} name="payment" className={style.checkBoxInput} />
+                                    <input type="radio" onChange={handleInput} checked={paymentData.payment === 'online'} value={'online'} name="payment" className={style.checkBoxInput} />
                                     <span className={style.checkBoxText}>Онлайн</span>
                                 </div>
                                 <div className={style.paymentMethod}>
@@ -71,7 +74,7 @@ export default function Payment() {
                         </div>
                       <div className={style.cash}>
                       <div className={style.checkBoxBlock}>
-                            <input type="radio"  value={'cash'} name="payment" className={style.checkBoxInput} />
+                            <input type="radio" onChange={handleInput} checked={paymentData.payment === 'cash'}  value={'cash'} name="payment" className={style.checkBoxInput} />
                             <span className={style.checkBoxText}>Наличными</span>
                         </div>
                       </div>

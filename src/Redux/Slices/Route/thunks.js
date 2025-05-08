@@ -11,6 +11,7 @@ export const Builder = (builder) => {
     builder.addCase(getRoutesThunk.fulfilled, (state, action) => {
         state.routes = action.payload.items
         state.routesCount = action.payload.total_count
+        state.loading = false
     }).addCase(getRoutesThunk.rejected, (state, action) => {
         state.error = action.error
     }).addCase(getRoutesThunk.pending, (state, action) => {

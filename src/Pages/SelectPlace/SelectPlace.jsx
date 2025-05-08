@@ -56,7 +56,7 @@ export default function SelectPlace() {
         <Header />
         <main className={style.mainContainer}>
             <SectionFindTicket value={value} handleSubmit={handleSubmit} />
-            <ProgressBar />
+            <ProgressBar num={1} />
             <section className={style.middleSection}>
                 <div className={style.leftColumn}>
                     <Settings />

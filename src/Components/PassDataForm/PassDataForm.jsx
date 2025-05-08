@@ -55,14 +55,15 @@ export default function PassengerDataForm({data, setData, index, setIsDisabled})
             }))
         }
         console.log(data);
+        console.log(index);
+        const res = data.slice()
         
-        if(data[index]){
-            data[index] = value
-            setData(data)
-        } else {
-            setData([...data, value])
-        }
+        res.splice(index, 1, value)
+        setData(res)
+       
     }
+    
+    console.log(value);
     
     
     
@@ -86,7 +87,7 @@ export default function PassengerDataForm({data, setData, index, setIsDisabled})
         <div className={style.passportData}>
             <div className={style.passportDataField}>
                 <label className={style.passportDataLabel}>Тип документа</label>
-                <select className={style.PassengerDataSelect} style={{minWidth: value.document_type === 'паспорт' ? 205 : 300}} onChange={ (e) => setValue({...value, document_type: e.target.value, document_data: ''})}>
+                <select className={style.PassengerDataSelect} value={value.document_type} style={{minWidth: value.document_type === 'паспорт' ? 205 : 300}} onChange={ (e) => setValue({...value, document_type: e.target.value, document_data: ''})}>
                     <option value={'паспорт'} className={style.passportDataOption}>Паспорт</option>
                     <option value={'Свидетельство о рождении'} className={style.passportDataOption}>Сведетельство о рождении</option>
                 </select>

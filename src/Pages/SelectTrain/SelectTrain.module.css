@@ -21,6 +21,11 @@
     color: black;
 }
 
+.preloaderContainer{
+    position: relative;
+
+}
+
 .middleSection{
     width: 100%;
     display: flex;

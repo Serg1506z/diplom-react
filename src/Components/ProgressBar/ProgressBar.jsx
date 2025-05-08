@@ -1,10 +1,18 @@
 import style from "./ProgressBar.module.css"
 
-export default function ProgressBarr (){
+const arr = [
+    {number : 1, name : 'Билеты'},
+    {number : 2, name : 'Пассажиры'},
+    {number : 3, name : 'Оплата'},
+    {number : 4, name : 'Проверка'},
+]
+
+export default function ProgressBarr ({num}){
     return <div className={style.progressBar_container}>
-        <div className={`${style.itemContainer} ${style.item1}`}> <div className={style.itemIcon}>1</div> Билеты</div>
-        <div className={`${style.itemContainer} ${style.item2}`}> <div className={style.itemIcon}>2</div> Пассажиры</div>
-        <div className={`${style.itemContainer} ${style.item3}`}> <div className={style.itemIcon}>3</div> Оплата </div>
-        <div className={`${style.itemContainer} ${style.item4} `}> <div className={style.itemIcon}>4</div> Проверка</div>
+        {arr.map((item, index) => {
+            return <div key={index} className={`${style.itemContainer} ${style[`item${item.number}`]} ${num >= item.number ? style.active : ''}`}> 
+                <div className={style.itemIcon}>{item.number}</div>{item.name}
+            </div>
+        })}
     </div>
 }

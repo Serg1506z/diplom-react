@@ -40,7 +40,7 @@ export default function Passengers() {
         <Header />
         <section className={style.mainContainer}>
             <SectionFindTicket value={value} handleSubmit={handleSubmit} />
-            <ProgressBar />
+            <ProgressBar num={2} />
             <div className={style.middleSection}>
                 <section className={style.leftSection}>
                     <TripDetails currentSeats={currentSeats}  />
